@@ -1,0 +1,29 @@
+package: cr-pod-list-controller
+import:
+- package: k8s.io/api
+  version: release-1.12
+  subpackages:
+  - admissionregistration/v1beta1
+  - apps/v1
+  - core/v1
+- package: k8s.io/apimachinery
+  version: release-1.12
+  subpackages:
+  subpackages:
+  - pkg/types
+- package: k8s.io/client-go
+  version: release-9.0
+  subpackages:
+  - plugin/pkg/client/auth/gcp
+- package: sigs.k8s.io/controller-runtime
+  version: v0.1.9
+  subpackages:
+  - pkg/client/config
+  - pkg/controller
+  - pkg/handler
+  - pkg/manager
+  - pkg/runtime/log
+  - pkg/runtime/signals
+  - pkg/source
+  - pkg/webhook
+  - pkg/webhook/admission/builder
